@@ -24,7 +24,7 @@ jobs:
           images: |
             ${{ secrets.REGISTRY_USER }}/${{ github.event.repository.name }}
           tags: |
-            type=ref
+            type=ref,event=branch
             type=sha
 
   release:
